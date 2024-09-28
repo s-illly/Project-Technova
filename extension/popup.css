@@ -40,12 +40,17 @@
 }
 
 .button {
-    background-color: #04AA6D;
+    background-color: #57684f;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
+    border-radius: 8px;
 }
 
 .header-text {
@@ -54,6 +59,9 @@
     font-family: "Playfair Display", sans-serif;
     text-shadow: 2px 2px #bdd4c0;
     padding-top: 10px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 20px;
     width: 50%;
 }
