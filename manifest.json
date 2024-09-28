@@ -1,10 +1,10 @@
 {
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
+  "name": "20-20-20 vision",
+  "description": "A reminder to rest your eyes from your computer every once in a while.",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
-    "default_popup": "hello.html",
+    "default_popup": "popup.html",
     "default_icon": "hello_extensions.png"
   }
 }
