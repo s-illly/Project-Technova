@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Gradient */
+html {
+    height: 100%;
+    background: linear-gradient(180deg, #ebfff5, #caffd2);
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #57684f;
+    text-align: center;
+    padding-top: 60px;
+    min-height: 100%;
+    background-image: linear-gradient(to bottom, white 93%, #d1dfca 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+nav {
+    background: linear-gradient(to bottom, #d1dfca 0.5%, rgba(182, 166, 230, 0) 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 60px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    background-color: #caffd2
+}
+
+li a {
+    display: block;
+    width: 60px;
+}
+
+.logo img {
+    max-width: 12%;
+    margin-left: 6%;
+    margin-top: -90px;
+    float: left;
+    position: relative;
+    z-index: 999;
+}
+
+
+/* Header Styling */
+header {
+    padding: 60px 0; 
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem; 
+    text-shadow: 2px 2px #f4f1fb;
+    font-family: "Playfair Display";
+    margin: -140px 0 0; 
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in forwards; 
+    animation-delay: 0.5s; 
+}
+
+h3 {
+    margin-top: 20px; 
+    font-size: 1.5rem; 
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in forwards; 
+    animation-delay: 0.5s; 
+}
+
+/* Footer Styling */
+footer {
+    color: rgb(97, 131, 97);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding-top: 40px; 
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center; 
+        background: linear-gradient(to bottom, #d1dfca 4%, rgba(182, 166, 230, 0) 100%);
+    }
+
+    .nav-links {
+        display: none; /* Hide links on mobile */
+    }
+
+    h1 {
+        font-size: 2rem; 
+        padding: 20px;
+        margin: 2rem 0 -2.5rem; /* Adjust margin */
+    }
+
+    .logo img {
+        max-width: 50%;
+        margin-top: -60px;
+        float: left;
+        margin-left: 1rem;
+    }
+
+    .logo1 {
+        max-width: 600px; 
+        margin-top: 7.2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem; 
+        padding: 30px;
+    }
+}
