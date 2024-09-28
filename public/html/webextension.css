@@ -37,7 +37,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 15%;
     background-color: #a2c1a7;
     height: 100%;
     position: fixed;
@@ -79,7 +79,7 @@ h1 {
     font-size: 2.5rem; 
     text-shadow: 2px 2px #f4f1fb;
     font-family: "Playfair Display";
-    margin: 140px 0 0; 
+    margin: 20px 0 0; 
 }
 
 h3 {
