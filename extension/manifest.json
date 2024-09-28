@@ -14,5 +14,12 @@
     "default_popup": "popup.html",
     "default_icon": "OptimEyes Logo 2.png",
     "default_title": "Start Session"
-  } 
+  }, 
+
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
