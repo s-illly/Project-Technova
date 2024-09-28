@@ -37,6 +37,8 @@
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
 }
 
 .button {
@@ -75,4 +77,15 @@ h1 {
     padding-right: 5%;
     padding-left: 5%;
     padding-bottom: 20px;
+}
+
+body {
+    border-style: dotted;
+}
+
+.image-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
 }
