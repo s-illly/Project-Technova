@@ -101,10 +101,10 @@ p {
   box-sizing: border-box;
   color: #2e4231;
   font-family: "Lato", sans-serif;
-  font-size: .875rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.25rem;
-  padding: .75rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
   text-decoration: none #D1D5DB solid;
   text-decoration-thickness: auto;
@@ -114,7 +114,7 @@ p {
 }
 
 #start-session:hover {
-  background-color: rgb(235, 247, 241);
+  background-color: rgb(165, 176, 166);
 }
 
 #start-session:focus {
@@ -127,7 +127,7 @@ p {
 }
 
 #timer-font {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Footer Styling */
@@ -154,4 +154,9 @@ footer .socials a:hover {
 .timer-container {
     margin: auto;
     margin-top: 50px;
+    background-color: rgba(130, 163, 123, 0.1);
+    width: 500px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 8px;
 }

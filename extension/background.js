@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                     func: openPopup,
                 });
             });
-        }, 5000);
+        }, 1000);
     }
 });
 
