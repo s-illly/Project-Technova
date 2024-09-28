@@ -30,8 +30,8 @@ document.getElementById('start-session').addEventListener('click', function() {
 });
 
 function startCountdown(duration) {
-    document.getElementById('start-session').style.display = 'block'; 
-    this.style.display = 'none';
+    //document.getElementById('start-session').style.display = 'block'; 
+    //this.style.display = 'none';
     let timer = duration, minutes, seconds;
     const countdownElement = document.getElementById('countdown');
 
