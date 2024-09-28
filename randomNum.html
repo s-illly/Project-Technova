@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Image Generator</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Number Image Generator</h1>
+    <button onclick="generateRandomNumber()">Generate Number</button>
+    <p id="randomNumber"></p>
+    <img id="image" src="" alt="" style="display: none;">
+
+    <script>
+        const images = [
+            '1.png', // Image for number 0
+            '2.png', // Image for number 1
+            '3.png', // Image for number 2
+            '4.png', // Image for number 3
+            '5.png', // Image for number 4
+            '6.png', // Image for number 5
+            '7.png', // Image for number 6
+            '8.png', // Image for number 7
+            '9.png', // Image for number 8
+            '10.png', // Image for number 9
+            '11.png', // Image for number 10
+
+            // Add more images as needed
+        ];
+
+        function generateRandomNumber() {
+            const randomNumber = Math.floor(Math.random() * images.length);
+            document.getElementById('randomNumber').textContent = `Generated Number: ${randomNumber}`;
+            const imageElement = document.getElementById('image');
+            imageElement.src = images[randomNumber];
+            imageElement.style.display = 'block'; // Show the image
+        }
+    </script>
+</body>
+</html> 
