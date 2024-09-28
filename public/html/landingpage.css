@@ -382,4 +382,12 @@ footer .socials a:hover {
   .event-item {
     flex: 1 1 calc(100% - 20px); /* Stack events on mobile */
   }
+
+  /* Goose page css */
+  #g-page-nav {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    color: #57684f;
+    margin-bottom: 100px;
+  }
 }
