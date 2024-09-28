@@ -31,47 +31,43 @@ nav {
     left: 0;
     z-index: 10;
     padding: 60px 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 15%;
-    background-color: #a2c1a7;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
-}
-
-li a {
-    display: block;
-    color: #ffffff;
-    padding: 8px 16px;
+  }
+  
+  .logo img {
+    max-width: 8%;
+    margin-left: 6%;
+    margin-top: -90px;
+    float: left;
+    position: relative;
+    z-index: 999;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: rgb(96, 133, 95);
     text-decoration: none;
-}
+    font-weight: bold;
+    font-size: 1.25rem; /* Use rem for responsive sizing */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #a7d6aa;
+  }
 
-li a:hover {
-    background-color: #2e4231;
-    color: white;
-}
-
-.logo img {
-    max-width: 50px;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-}
-
-.active {
-    background-color: #3b703c;
-    color: white;
-}
 
 /* Header Styling */
 header {
-    padding: 60px 0; 
+    padding: 60px 0;
     position: relative;
 }
 
@@ -79,7 +75,8 @@ h1 {
     font-size: 2.5rem; 
     text-shadow: 2px 2px #f4f1fb;
     font-family: "Playfair Display";
-    margin: 20px 0 0; 
+    margin: auto;
+    margin-right: 200px;
 }
 
 h3 {
