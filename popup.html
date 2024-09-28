@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>temp name lol</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="timer-container" style="width: 500px;">
+    <h1 class="text-center" style="text-align: center;"">timer</h1>
+  </div>
+    <div class=" image">
+      <img id="image" src="images/1.png" alt="" style="width: 500px; height:300px;">
+      <!--<div class="button">
+        <button id="b1" onclick="chooseImage()">generate image</button>
+      </div>-->
+      <button onclick="generateRandomNumber()">Generate Number</button>
+      <p id="randomNumber"></p>
+      <img id="image" src="" alt="" style="display: none;">
+      <script src="main.js">
+        //window.onload = chooseImage
+        //content.document.defaultView.wrappedJSObject.chooseImage();
+        document.getElementById("b1").addEventListener('click', chooseImage);
+
+        var images = new Array("images/1.png", "images/2.png", "images/3.png", "images/4.png");
+
+        function chooseImage(event) {
+          event.preventDefault();
+          document.getElementById('randomNumber').textContent = `Generated Number: ${randomNumber}`;
+          const randomNumber = Math.floor(Math.random() * images.length);
+          document.getElementById('randomNumber').textContent = `Generated Number: ${randomNumber}`;
+          const imageElement = document.getElementById('image');
+          imageElement.src = images[randomNumber];
+          imageElement.style.display = 'block';
+        }
+
+        /*
+      function generateRandomNumber() {
+        const randomNumber = Math.floor(Math.random() * images.length);
+        document.getElementById('randomNumber').textContent = `Generated Number: ${randomNumber}`;
+        const imageElement = document.getElementById('image');
+        imageElement.src = images[randomNumber];
+        imageElement.style.display = 'block'; // Show the image
+      }*/
+      </script>
+  </div>
+</body>
+
+</html>
