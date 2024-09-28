@@ -28,7 +28,7 @@ function randomImage(){
 }
 
 
-document.getElementById('start-session').addEventListener('click', function() {
+/*document.getElementById('start-session').addEventListener('click', function() {
     startCountdown(20); //20s countdown
 
     //select img element to be displayed
@@ -38,7 +38,7 @@ document.getElementById('start-session').addEventListener('click', function() {
     const imageName = images[randomIdx];
 
     img.src = imageName;
-});
+});*/
 
 function startCountdown(duration) {
     let timer = duration, minutes, seconds;
