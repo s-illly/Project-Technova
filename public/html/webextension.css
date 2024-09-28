@@ -37,24 +37,37 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 60px;
-    background-color: #caffd2
+    width: 25%;
+    background-color: #a2c1a7;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
 }
 
 li a {
     display: block;
-    width: 60px;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #2e4231;
+    color: white;
 }
 
 .logo img {
-    max-width: 12%;
-    margin-left: 6%;
-    margin-top: -90px;
-    float: left;
-    position: relative;
-    z-index: 999;
+    max-width: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
 }
 
+.active {
+    background-color: #3b703c;
+    color: white;
+}
 
 /* Header Styling */
 header {
@@ -66,10 +79,7 @@ h1 {
     font-size: 2.5rem; 
     text-shadow: 2px 2px #f4f1fb;
     font-family: "Playfair Display";
-    margin: -140px 0 0; 
-    opacity: 0; 
-    animation: fadeIn 1.5s ease-in forwards; 
-    animation-delay: 0.5s; 
+    margin: 140px 0 0; 
 }
 
 h3 {
@@ -99,44 +109,4 @@ footer .socials a {
 
 footer .socials a:hover {
     text-decoration: underline;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    body {
-        padding-top: 40px; 
-    }
-
-    nav {
-        flex-direction: column; 
-        align-items: center; 
-        background: linear-gradient(to bottom, #d1dfca 4%, rgba(182, 166, 230, 0) 100%);
-    }
-
-    .nav-links {
-        display: none; /* Hide links on mobile */
-    }
-
-    h1 {
-        font-size: 2rem; 
-        padding: 20px;
-        margin: 2rem 0 -2.5rem; /* Adjust margin */
-    }
-
-    .logo img {
-        max-width: 50%;
-        margin-top: -60px;
-        float: left;
-        margin-left: 1rem;
-    }
-
-    .logo1 {
-        max-width: 600px; 
-        margin-top: 7.2rem;
-    }
-
-    h3 {
-        font-size: 1.25rem; 
-        padding: 30px;
-    }
 }
