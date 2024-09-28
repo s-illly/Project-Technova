@@ -133,13 +133,16 @@ section {
 
 .about-section h2 {
   margin-bottom: 15px;
+  font-size: 1.75rem
 }
+
 
 .about-section p,
 .schedule-section p {
   width: 80%;
   margin-left: auto; 
   margin-right: auto; 
+  text-align: justify;
   margin-bottom: 20px;
   line-height: 1.6;
   text-shadow: 2px 2px #f4f1fb;
@@ -163,13 +166,14 @@ section {
 .events-section {
   text-align: center; 
   padding: 20px; 
+  margin-bottom: 20px;
 }
 
 .events-gallery {
   display: flex; 
   justify-content: center; 
   flex-wrap: wrap; 
-  padding: 60px; 
+  padding: 40px; 
 }
 
 .event-item {
@@ -193,7 +197,7 @@ section {
 }
 
 .get-involved-section p {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .get-involved-section a {
@@ -204,7 +208,7 @@ section {
 }
 
 .get-involved-section {
-  margin-bottom: 170px; 
+  margin-bottom: 100px; 
 }
 
 #sign-up {
