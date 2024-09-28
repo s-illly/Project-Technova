@@ -1,22 +1,49 @@
 .header {
-    font-family: "Playfair Display", sans-serif;
-    color: #7fa283;
 
+    background: linear-gradient(to bottom, #c8d7c1 4%, rgba(182, 166, 230, 0) 100%);
 }
 
-.logo {
+.col {
     float: left;
-    margin-top: 10px;
+    width: 20%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.logo2 {
+    padding-right: 500;
 }
 
 .header-text {
-    float: right;
+    float: left;
+    color: #57684f;
+    font-family: "Playfair Display", sans-serif;
+    text-shadow: 2px 2px #bdd4c0;
+
+}
+
+.timer-container {
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 
 .header {
     padding-top: 10px;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
     padding-bottom: 20px;
-    margin: auto;
 }
