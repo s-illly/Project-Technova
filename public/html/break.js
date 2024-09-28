@@ -15,7 +15,7 @@ const images = [
 ];
 function randomImage(){
     console.log("hi");
-    startCountdown(20 * 60); //20 min countdown
+    startCountdown(20); //20s countdown
     //chrome.runtime.sendMessage({ action: 'startTimer' }); //send message to background to start timer
 
     //select img element to be displayed
