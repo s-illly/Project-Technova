@@ -284,6 +284,7 @@ footer .socials a:hover {
   background-color: #d1dfca;
   width: 70px;
   height: 26px;
+  margin: 50px;
 }
 
 @keyframes beat {
