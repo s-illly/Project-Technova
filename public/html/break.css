@@ -49,10 +49,8 @@ h1 {
 }
 
 .image-container {
-    float: left;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 94%;
+    margin: auto;
+    width: 100%;
     padding: 50px;
 }
