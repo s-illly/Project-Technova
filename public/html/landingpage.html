@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OptimEyes</title>
+  <link rel="stylesheet" href="landingpage.css">
+  <link rel="stylesheet" href="../html/landingpage.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">Product</a></li>
+      <li><a href="#product">Solutions</a></li>
+      <li><a href="#get-demo">Get a Demo</a></li>
+      <li><a href="websitehere">Login</a></li>
+      <li><a href="websitehere">Add to Chrome Now</a></li>
+    </ul>
+    <div class="logo">
+      <img src="https://cloud-fg4nhlbaa-hack-club-bot.vercel.app/0hack-club-logo.png" alt="Logo">
+    </div>
+  </nav>
+
+  <!-- Landing page message -->
+  <header>
+    <div class="logo-container">
+      <img src="/images/landingpageheader.png" alt="Logo1" class="logo1">
+    </div>
+    <div class="header-text">
+      <h1>Introducing <strong>EDITName!</strong> 💫</h1>
+      <h3 id="about">EDITSlogan - Protecting Your Eyes, 20 seconds at a time.</h3>
+    </div>
+  </header>
+  
+<!-- Product -->
+  <section class="about-section">
+    <div class="text-container">
+      <h2 id="product"> <em>Product</em></h2>
+      <p>text<em>text <a href="link">link text</a></em> text <strong>text</strong>.</p>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section class="schedule-section">
+    <h2 id="get-demo">Solutions</h2>
+    <p>tldr: eye strain is a big problem </p>
+  </section>
+
+  <!-- Get Demo Section -->
+  <section class="get-involved-section">
+    <h2>Here's How it Works</h2>
+    <p id="sign-up">Every 20 minutes, Eye Spy's extension opens.</p>
+    
+    <h2>Have another question?</h2>
+    <p>Reach out to us! Our email is <a href="mailto:eyespy@gmail.com"> eyespy@gmail.com</a>!</p>  
+  </section>
+
+  <!-- For photos -->
+  <section class="events-section">
+    <h2>Previous Events</h2>
+    <div class="events-gallery">
+      <div class="event-item">
+        <h4>Solstice - Chicago, IL</h4>
+        <img src="https://cloud-6ef3v4tky-hack-club-bot.vercel.app/0image.png" alt="Solstice Event">
+      </div>
+      <div class="event-item">
+        <h4>Oasis - Austin, TX</h4>
+        <img src="https://cloud-6ef3v4tky-hack-club-bot.vercel.app/2image.png" alt="Oasis Event">
+      </div>
+      <div class="event-item">
+        <h4>Evergreen - Seattle, WA</h4>
+        <img src="https://cloud-6ef3v4tky-hack-club-bot.vercel.app/4image.png" alt="Evergreen Event">
+      </div>
+    </div>
+  </section>
+
+  <div class="cursor-eye">👀</div>
+
+  <script type="text/javascript">
+    const cursor = document.querySelector('.cursor-eye');
+    let lastX, lastY; // Variables to store the last cursor position
+
+    // Update the cursor position based on mouse movement
+    document.addEventListener('mousemove', function(e) {
+        lastX = e.clientX; // Store the last X position
+        lastY = e.clientY; // Store the last Y position
+        cursor.style.left = `${lastX}px`; // Update left position
+        cursor.style.top = `${lastY}px`; // Update top position
+    });
+
+    // Hide the cursor when scrolling
+    window.addEventListener('scroll', function() {
+        cursor.style.opacity = '0'; // Hide cursor during scroll
+    });
+
+    // Show the cursor again after scrolling stops and reset position
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+        clearTimeout(scrollTimeout);
+        cursor.style.opacity = '0'; // Hide cursor during scroll
+        scrollTimeout = setTimeout(function() {
+            cursor.style.opacity = '1'; // Show cursor after scrolling stops
+            // Reset position to last known cursor coordinates
+            cursor.style.left = `${lastX}px`; // Reset left position
+            cursor.style.top = `${lastY}px`; // Reset top position
+        }, 100); // Adjust delay as needed
+    });
+
+  </script>
+
+</body>
+
+  <!--footer-->
+  <footer>
+    <p>made at technova</p>
+    <div class="heart">
+      <div class="beat"><p>👁️</p></div>
+      <div class="thump"><p>👁️</p></div>
+    </div> 
+    <p>by emma, faith, donya, and lily</p>
+  </footer>
+    
+</html>
+</DOCTYPE>
