@@ -13,4 +13,12 @@ document.getElementById('b1').addEventListener('click', function () {
     img.src = imageName;
 });
 
-document.getElementById('')
+document.getElementById('start-session').addEventListener('click', () => {
+    startCountdown(20 * 60); //20 min countdown
+    chrome.runtime.sendMessage({ action: 'startTimer' });
+});
+
+function startCountdown(duration) {
+    let timer = duration, minutes, seconds;
+    const countdownElement = document.get
+}
