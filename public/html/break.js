@@ -29,8 +29,7 @@ function randomImage(){
 
 
 document.getElementById('start-session').addEventListener('click', function() {
-    startCountdown(20 * 60); //20 min countdown
-    chrome.runtime.sendMessage({ action: 'startTimer' }); //send message to background to start timer
+    startCountdown(20); //20s countdown
 
     //select img element to be displayed
     const img = document.getElementById('image');
@@ -57,6 +56,7 @@ function startCountdown(duration) {
         
         if (--timer < 0) {
             clearInterval(interval); //stop countdown when reach 0
+            window.close();
         }
     }, 1000);
 }
