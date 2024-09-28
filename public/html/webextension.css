@@ -90,7 +90,46 @@ h3 {
     animation-delay: 0.5s; 
 }
 
+p {
+    font-size: 1rem;
+}
+
 /* Button Styling */
+#start-session {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209, 249, 217);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #2e4231;
+  font-family: "Lato", sans-serif;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  margin: 10px;
+}
+
+#start-session:hover {
+  background-color: rgb(235, 247, 241);
+}
+
+#start-session:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#start-session:focus-visible {
+  box-shadow: none;
+}
+
+#timer-font {
+    font-size: 1rem;
+}
 
 /* Footer Styling */
 footer {
@@ -111,4 +150,9 @@ footer .socials a {
 
 footer .socials a:hover {
     text-decoration: underline;
+}
+
+.timer-container {
+    margin: auto;
+    margin-top: 50px;
 }
