@@ -47,7 +47,7 @@ function startCountdown(duration) {
         
         if (--timer < 0) {
             clearInterval(interval); //stop countdown when reach 0
-            window.open("pet.html");
+            window.open("break.html");
         }
     }, 1000);
 }
