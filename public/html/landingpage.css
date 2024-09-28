@@ -281,10 +281,11 @@ footer .socials a:hover {
 }
 
 #g-nav-div {
-  background-color: #d1dfca;
+  background-color: #57684f;
   width: 70px;
   height: 26px;
   margin: 50px;
+  border-radius: 4px;
 }
 
 @keyframes beat {
