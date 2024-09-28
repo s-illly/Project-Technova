@@ -1,0 +1,58 @@
+.header {
+    padding-top: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, #c8d7c1 4%, rgba(182, 166, 230, 0) 100%);
+}
+
+.timer-container {
+    float: right;
+    width: 40%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+}
+
+.button {
+    background-color: #57684f;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.header-text {
+    float: left;
+    color: #57684f;
+    font-family: "Playfair Display", sans-serif;
+    text-shadow: 2px 2px #bdd4c0;
+    padding-top: 10px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    width: 50%;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.image-container {
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+    padding: 50px;
+}

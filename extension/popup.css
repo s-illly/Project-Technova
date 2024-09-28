@@ -1,5 +1,8 @@
 .header {
-
+    padding-top: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 20px;
     background: linear-gradient(to bottom, #c8d7c1 4%, rgba(182, 166, 230, 0) 100%);
 }
 
@@ -70,13 +73,6 @@
 
 h1 {
     margin: 0px;
-}
-
-.header {
-    padding-top: 10px;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 20px;
 }
 
 body {
