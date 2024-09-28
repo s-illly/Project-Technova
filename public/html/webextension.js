@@ -16,7 +16,6 @@ const images = [
 
 document.getElementById('start-session').addEventListener('click', function() {
     startCountdown(1 * 60); //20 min countdown
-    window.open("pet.html");
     //chrome.runtime.sendMessage({ action: 'startTimer' }); //send message to background to start timer
 
     //select img element to be displayed
@@ -44,6 +43,7 @@ function startCountdown(duration) {
         
         if (--timer < 0) {
             clearInterval(interval); //stop countdown when reach 0
+            window.open("pet.html");
         }
     }, 1000);
 }
