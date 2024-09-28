@@ -246,6 +246,12 @@ footer .socials a:hover {
   text-decoration: underline;
 }
 
+/*Goose feet*/
+.goosefeet {
+  width: 800px;
+  bottom: -50%;
+}
+
 /* For heart */
 .heart {
   font-size: 15px;
