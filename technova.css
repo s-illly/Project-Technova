@@ -1,0 +1,375 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Gradient */
+html {
+  height: 100%;
+  background: linear-gradient(180deg, #ebfff5, #caffd2);
+  background-size: cover; 
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #d1dfca;
+  text-align: center;
+  padding-top: 60px;
+  min-height: 100%; 
+  background-image: linear-gradient(to bottom, white 93%, #d1dfca 100%);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+nav {
+  background: linear-gradient(to bottom, #d1dfca 0.5%, rgba(182, 166, 230, 0) 100%);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 60px 0;
+}
+
+.logo img {
+  max-width: 19%;
+  margin-left: 10%;
+  margin-top: -90px;
+  float: left;
+  position: relative;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem; /* Use rem for responsive sizing */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fbc2eb;
+}
+
+/* Header Styling */
+header {
+  padding: 60px 0; 
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+.logo1 {
+  width: 800px; 
+  max-width: 100%; /* Ensure logo is responsive */
+  margin-bottom: 10px; 
+  overflow: hidden;
+  position: relative; 
+  top: -50px; 
+  animation: fadeIn 1s ease-in; 
+}
+
+.header-text {
+  font-family: "Playfair Display";
+  margin-top: -140px; 
+}
+
+h1 {
+  font-size: 2.5rem; /* Use rem for responsive sizing */
+  text-shadow: 2px 2px #f4f1fb;
+  margin: 0; 
+  opacity: 0; 
+  animation: fadeIn 1.5s ease-in forwards; 
+  animation-delay: 0.5s; 
+}
+
+h3 {
+  margin-top: 20px; 
+  font-size: 1.5rem; /* Use rem for responsive sizing */
+  opacity: 0; 
+  animation: fadeIn 1.5s ease-in forwards; 
+  animation-delay: 0.5s; 
+}
+
+.about-section a, .about-section em {
+  color: #d1dfca;
+  text-decoration: underline; 
+  text-decoration-style: wavy; 
+  text-decoration-thickness: 2px;
+}
+
+.about-section a:hover {
+  color: #fbc2eb;
+}
+
+/* Sections Styling */
+section {
+  margin: 100px 0;
+}
+
+.about-section h2 {
+  margin-bottom: 15px;
+}
+
+.about-section p,
+.schedule-section p {
+  width: 80%;
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-shadow: 2px 2px #f4f1fb;
+}
+
+.schedule-section {
+  margin: 100px 0; 
+  padding: 20px; 
+}
+
+.schedule-section h2 {
+  margin-bottom: 20px; 
+  font-size: 1.75rem; /* Use rem for responsive sizing */
+}
+
+.schedule-section th,
+.schedule-section td {
+  padding: 12px; 
+}
+
+.events-section {
+  text-align: center; 
+  padding: 20px; 
+}
+
+.events-gallery {
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  padding: 60px; 
+}
+
+.event-item {
+  flex: 1 1 calc(33.333% - 20px); 
+  margin: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 8px; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.event-item img {
+  width: 100%; 
+  height: 100%; /* Adjust height for responsive behavior */
+  object-fit: cover; 
+  display: block; 
+}
+
+.event-item h4 {
+  margin: 10px 0; 
+}
+
+.get-involved-section p {
+  margin-top: 20px;
+}
+
+.get-involved-section a {
+  color: #FBA7BB; 
+  text-decoration: underline; 
+  text-decoration-style: wavy; 
+  text-decoration-thickness: 2px;
+}
+
+.get-involved-section {
+  margin-bottom: 170px; 
+}
+
+#sign-up {
+  margin-bottom: 10rem; 
+}
+
+.cursor-eye {
+  position: fixed; 
+  font-size: 30px; 
+  transform: translate(-50%, -50%); 
+  pointer-events: none; 
+  transition: opacity 0.1s ease; 
+  opacity: 0.8; 
+  z-index: 988;
+}
+
+/* Footer Styling */
+footer {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .socials a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .socials a:hover {
+  text-decoration: underline;
+}
+
+/* For heart */
+.heart {
+  font-size: 15px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.beat {
+  position: relative;
+  animation: beat 3s linear infinite;
+}
+
+.thump {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: thump 3s linear infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(0.9);
+  }
+  21% {
+    transform: scale(1.1) skew(0.004turn);
+  }
+  28% {
+    transform: scale(1) skew(0.008turn);
+  }
+  35% {
+    transform: scale(1) skew(0);
+  }
+}
+
+@keyframes thump {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  14% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  21% {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding-top: 40px; 
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  nav {
+    display: flex; /* Show navbar on mobile */
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links */
+    background: linear-gradient(to bottom, #d1dfca 4%, rgba(182, 166, 230, 0) 100%);
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .get-involved-section p {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem; 
+    padding: 20px;
+  }
+
+  .cursor-eye {
+    display: none; 
+  }
+
+  .logo img {
+    max-width: 50%;
+    margin-top: -60px;
+    float: left;
+    margin-left: 1rem;
+    position: relative;
+    z-index: 999;
+  }
+
+  .logo1 {
+    width: 100%; 
+    max-width: 600px; 
+    margin-top: 7.2rem;
+  }
+
+  h1 {
+    font-size: 1.75rem; /* Use rem for responsive sizing */
+    margin-top: 2rem;
+    margin-bottom: -2.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem; /* Use rem for responsive sizing */
+    padding: 30px;
+  }
+
+  .schedule-section table {
+    width: 100%;
+    overflow-x: auto; 
+  }
+
+  .event-item {
+    flex: 1 1 calc(100% - 20px); /* Stack events on mobile */
+  }
+}
