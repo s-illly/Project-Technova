@@ -15,5 +15,20 @@ document.getElementById('start-session').addEventListener('click', () => {
 
 function startCountdown(duration) {
     let timer = duration, minutes, seconds;
-    const countdownElement = document.get
+    const countdownElement = document.getElementById('countdown');
+
+    const interval = setInterval(() => {
+        minutes = Math.floor(timer / 60);
+        seconds = timer % 60;
+
+        //formatting date and time
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        countdownElement.textContent = `${minutes}:${seconds}`;
+        
+        if (--timer < 0) {
+            clearInterval(interval); //stop countdown when reach 0
+        }
+    }, 1000);
 }
