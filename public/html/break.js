@@ -13,6 +13,20 @@ const images = [
     "images/10.png", 
     "images/11.png"
 ];
+function randomImage(){
+    console.log("hi");
+    startCountdown(20 * 60); //20 min countdown
+    //chrome.runtime.sendMessage({ action: 'startTimer' }); //send message to background to start timer
+
+    //select img element to be displayed
+    const img = document.getElementById('image');
+
+    const randomIdx = Math.floor(Math.random() * images.length);
+    const imageName = images[randomIdx];
+
+    img.src = imageName;
+}
+
 
 document.getElementById('start-session').addEventListener('click', function() {
     startCountdown(20 * 60); //20 min countdown
@@ -25,13 +39,9 @@ document.getElementById('start-session').addEventListener('click', function() {
     const imageName = images[randomIdx];
 
     img.src = imageName;
-
-    
 });
 
 function startCountdown(duration) {
-    document.getElementById('start-session').style.display = 'block'; 
-    this.style.display = 'none';
     let timer = duration, minutes, seconds;
     const countdownElement = document.getElementById('countdown');
 
