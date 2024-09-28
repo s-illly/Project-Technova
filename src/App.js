@@ -3,6 +3,7 @@ import CelestialHackathon from './screens/technova';
 
 import './App.css';
 
+
 function App() {
   return (
     <>
