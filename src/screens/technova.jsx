@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './style.css'; // Ensure you have the CSS file in the same directory
 
+
 const CelestialHackathon = () => {
   useEffect(() => {
     const cursor = document.querySelector('.cursor-alien');
@@ -45,7 +46,7 @@ const CelestialHackathon = () => {
           <li><a href="#get-involved">Solutions</a></li>
           <li><a href="#events-schedule">Get a Demo</a></li>
           <li><a href="https://hackclub.com/">Login</a></li>
-          <li><a href="">Add to Chrome Now</a></li>
+          
         </ul>
         <div className="hackclub-logo">
           <img src="https://cloud-fg4nhlbaa-hack-club-bot.vercel.app/0hack-club-logo.png" alt="Hack Club" />
