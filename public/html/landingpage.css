@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #d1dfca;
+  color: #57684f;
   text-align: center;
   padding-top: 60px;
   min-height: 100%; 
@@ -37,8 +37,8 @@ nav {
 }
 
 .logo img {
-  max-width: 19%;
-  margin-left: 10%;
+  max-width: 12%;
+  margin-left: 6%;
   margin-top: -90px;
   float: left;
   position: relative;
@@ -223,7 +223,7 @@ section {
 
 /* Footer Styling */
 footer {
-  color: white;
+  color: rgb(97, 131, 97);
   padding: 20px 0;
   text-align: center;
 }
