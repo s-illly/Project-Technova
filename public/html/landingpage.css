@@ -272,6 +272,21 @@ footer .socials a:hover {
   animation: thump 3s linear infinite;
 }
 
+/* Goose page css */
+#g-page-nav {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+#g-nav-div {
+  background-color: #d1dfca;
+  width: 70px;
+  height: 26px;
+  margin: 50px;
+}
+
 @keyframes beat {
   0% {
     transform: scale(1);
@@ -380,11 +395,4 @@ footer .socials a:hover {
     flex: 1 1 calc(100% - 20px); /* Stack events on mobile */
   }
 
-  /* Goose page css */
-  #g-page-nav {
-    text-decoration: none;
-    font-family: "Lato", sans-serif;
-    color: #57684f;
-    margin-bottom: 100px;
-  }
 }
