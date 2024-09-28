@@ -1,0 +1,22 @@
+.header {
+    font-family: "Playfair Display", sans-serif;
+    color: #7fa283;
+
+}
+
+.logo {
+    float: left;
+    margin-top: 10px;
+}
+
+.header-text {
+    float: right;
+}
+
+.header {
+    padding-top: 10px;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 20px;
+    margin: auto;
+}
