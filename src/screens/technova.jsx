@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './style.css'; // Ensure you have the CSS file in the same directory
+import './technova.css'; // Ensure you have the CSS file in the same directory
 
 
 const CelestialHackathon = () => {
