@@ -43,6 +43,9 @@ nav {
   }
   
   .nav-links {
+    padding-left: 30px;
+    padding-top: 100px;
+    position:fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -63,7 +66,6 @@ nav {
   .nav-links a:hover {
     color: #a7d6aa;
   }
-
 
 /* Header Styling */
 header {
