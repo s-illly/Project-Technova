@@ -15,7 +15,7 @@ const images = [
 ];
 
 document.getElementById('start-session').addEventListener('click', function() {
-    startCountdown(1 * 60); //20 min countdown
+    startCountdown(20 * 60); //20 min countdown
     //chrome.runtime.sendMessage({ action: 'startTimer' }); //send message to background to start timer
 
     //select img element to be displayed
